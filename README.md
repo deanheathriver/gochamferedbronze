@@ -1,4 +1,4 @@
-# trie-store-66dbae
+# trie-store-d0f724
 
 A Rust trie-store utility.
 

