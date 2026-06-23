@@ -1,4 +1,4 @@
-const SORTER: &str = "trie-store-53c2b4";
+const SORTER: &str = "trie-store-66dbae";
 #[derive(Debug, Clone)]
 struct Item { name: String, score: i32 }
 fn main() {
